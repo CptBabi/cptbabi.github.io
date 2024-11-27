@@ -1,0 +1,519 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: black;
+    font-family: Arial, sans-serif;
+    animation: grow 1s;
+}
+    @keyframes grow {
+        0% { transform: scale(.2); }
+      100% { transform: scale(1); }
+    }
+header {/*Start of mobile header*/
+    border: 5px solid rgba(248, 244, 244, 0.8);
+    margin-bottom: 10px;
+    border-radius: 3px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #8f8f8f;
+}
+nav {
+    position: relative;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+nav ul li {
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-size: 3rem;
+    border: 5px solid white;
+    border-radius: 10rem;
+    background-color: #8f8f8f;    
+}
+nav ul li:hover {
+    background-color: rgba(248, 244, 244, 0.8);
+    color: white;
+}
+.show-items {
+    display: block; 
+}
+.toggle {
+    font-size: 4rem;
+    color: white;
+    cursor: pointer;
+    display: block;
+}/*end of mobile header*/
+.main-hero{ /*start of hero*/
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Charm", cursive;
+    font-weight: 400;
+    font-style: normal;   
+}
+.main-hero p{
+    font-size: 2rem;
+    padding:3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.video-container{ /*start of video*/
+    position: relative;
+    width: 100%;
+    max-width: 75%;
+    padding-bottom: 56.25%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.video-styles iframe {
+    position: absolute;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 5px solid white;
+    border-radius: 2rem;
+}
+.about-owner img{ /*start of owner*/
+    margin-top: 5rem;
+    width:40%;
+    border: 5px solid white;
+}
+.about-owner h2{
+    font-family: "Thasadith", sans-serif;
+    font-weight: 700;
+    font-style: normal;    
+}
+.about-owner{
+    color: white;
+    text-align: center;
+    border: 5px solid white;
+    margin-top: 5rem;
+    font-size: 2rem;
+    font-family: "Thasadith", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.about-owner p{
+    margin: 3rem;    
+}
+.credentials{
+    color: gold;
+    text-decoration: underline;
+   text-align: center;
+}
+h2{
+    font-family: "Thasadith", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.past-project-title{ /*start of projects*/
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+.photo-gallery { 
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 15px;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+  } 
+  .photo-item { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 5px solid #ddd; 
+    padding: 10px;
+    min-width: 200px;
+    text-align: center;
+  }
+  .photo-item img {
+    max-height: 200px;
+    min-height: 130px;    
+  }
+  
+  .photo-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  footer { /*Start of footer*/
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "Thasadith", sans-serif;    
+    font-style: normal;
+}
+.footer-logo {
+    flex: 1;
+    max-width: 200px;
+}
+.footer-logo .logo {
+    width: 100%;
+    height: auto;
+}
+.footer-nav,
+.footer-contact {
+    flex: 1;
+    max-width: 250px;
+    padding: 0 1rem;
+    font-family: "Thasadith", sans-serif;    
+    font-style: normal;
+}
+.footer-nav h3,
+.footer-contact h3 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: "Thasadith", sans-serif;    
+    font-style: normal;
+}
+.footer-nav{
+    padding-right: 1rem;
+    padding-left: 1rem; 
+    border-right: 5px solid #fff;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.footer-nav ul,
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+    font-size: 2rem;
+    font-family: "Thasadith", sans-serif;    
+    font-style: normal;
+}
+.footer-nav li,
+.footer-contact li {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-family: "Thasadith", sans-serif;    
+    font-style: normal;
+}
+.footer-nav a,
+.footer-contact a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+.footer-nav a:hover,
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.footer-nav h3{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    padding: 30px 0;
+    font-family: "Thasadith", sans-serif;    
+    font-style: normal;
+}
+.footer-contact h3{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    padding: 30px 0;
+    font-family: "Thasadith", sans-serif;    
+    font-style: normal;
+}
+.review-section { /*start of reviews*/
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }  
+  h2 {
+    text-align: center;
+    font-size: 3em;
+    color: #ffffff;
+    font-family: "Thasadith", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  }  
+  .review {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-left: 5px solid gold;
+    border-radius: 8px;
+  }  
+  .reviewer-info {
+    margin-bottom: 10px;
+  }  
+  .reviewer-name {
+    font-weight: bold;
+    font-size: 1.1em;
+  }  
+  .reviewer-location {
+    font-size: 0.9em;
+    color: #777;
+  }  
+  .review-content {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #555;
+  }  
+  .review-rating span {
+    font-size: 1.5em;
+    color: #f39c12;
+  }
+.table-wrapper{/* Start of Table */
+    margin-left:20px;
+    display: block;
+    font-family: "Thasadith", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;    
+}
+.fl-table {
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: normal;
+    border: none;
+    border-collapse: separate; 
+    border-spacing: 15px; 
+    width: 90%;
+    max-width: 90%;
+    white-space: wrap;
+    background-color: white;    
+}
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 2rem;
+}
+.fl-table td {    
+    font-size: 1.5rem;
+}
+.fl-table thead th {
+    color: #ffffff;
+    background: #000000;
+    font-size: 2rem;
+}
+.fl-table thead th:nth-child(odd) {
+    color: #000000;
+    background: #ffffff;
+    font-size: 2rem;
+}
+ .fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+ .disclaimer{
+    color:white;
+    font-size: 2rem;
+}
+ /*Start of Form*/
+ .container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow:scroll;
+}  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact textarea,
+  #contact button[type="submit"] {
+    font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}  
+  #contact {
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 150px 0;    
+ }  
+  #contact h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}  
+  #contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+}  
+    fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}  
+  #contact input[type="text"]:hover,
+  #contact input[type="email"]:hover,
+  #contact input[type="tel"]:hover,
+  #contact input[type="url"]:hover,
+  #contact textarea:hover 
+
+  
+  #contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}  
+  #contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: gold;
+    color: #000000;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+ }  
+    #contact button[type="submit"]:hover {
+    background: #4c4e4c;
+    
+ }  
+    #contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+    .copyright {
+    text-align: center;
+}  
+    #contact input:focus,
+    #contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+.google-map {/*start of google maps*/
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+} 
+.google-map-title{
+    text-align: center;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 700;
+    font-style: normal; 
+    font-size: 3rem; 
+  color: white;
+}  
+  .google-map iframe{
+    border: 0; 
+    width: 100%; 
+    max-width: 600px; 
+    height: 450px; 
+  }
+
+  @media only screen and (min-width: 1200px) {/*Theshold for desktop*/
+    
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            max-width: 1201px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        .toggle {
+            display: none; 
+        }
+        header {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 0 20px;
+        }
+    
+        nav ul {
+            display: flex; 
+            justify-content: space-evenly; 
+
+            align-items: center; 
+            position: static; 
+            background-color: transparent; 
+            width: 100%; 
+            margin: 0; 
+            padding: 0; 
+        }
+    
+        nav ul li {
+            padding: 2rem 3rem; 
+            font-size: 2.5rem; 
+            font-weight: 700; 
+            color: white; 
+            background-color: transparent; 
+            border: none; 
+        }
+    
+        nav ul li:hover {
+            background-color: rgba(248, 244, 244, 0.8); 
+            color: white; 
+        }
+        
+    }
+    
+    
